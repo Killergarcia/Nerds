@@ -26,7 +26,7 @@ Apparently stuff changed between mysql versions.
 
 At this section
 
-Now we need to modify php.ini open php.ini up in nano use CTRL+W to search for the terms below modify the php.ini file when you have finished use CTRL+O in nano to write the changes to the file. To exit you CTRL+X.
+> Now we need to modify php.ini open php.ini up in nano use CTRL+W to search for the terms below modify the php.ini file when you have finished use CTRL+O in nano to write the changes to the file. To exit you CTRL+X.
 
 ```
 nano /etc/php/7.2/apache2/php.ini
@@ -40,7 +40,7 @@ nano /etc/php/7.4/apache2/php.ini
 
 At this part:
 
-Fill out MySql database details. Server hostname should be localhost server port 3306 MySQL user: hashtopolis MySQL Password: Password for MySQL Database name: hashtopolis.
+> Fill out MySql database details. Server hostname should be localhost server port 3306 MySQL user: hashtopolis MySQL Password: Password for MySQL Database name: hashtopolis.
 
 the password should be the one you made before with the  
 
