@@ -38,6 +38,16 @@ the 7.2 directory will be different based on the version of PHP that got install
 nano /etc/php/7.4/apache2/php.ini
 ```
 
+At this part:
+
+Fill out MySql database details. Server hostname should be localhost server port 3306 MySQL user: hashtopolis MySQL Password: Password for MySQL Database name: hashtopolis.
+
+the password should be the one you made before with the  
+
+```
+sudo mysql -uroot -e "CREATE USER 'hashtopolis'@'localhost' IDENTIFIED BY 'securePassword';"
+```
+
 ## Sources
 
 Hashtopolis Guide
