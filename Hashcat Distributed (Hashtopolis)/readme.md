@@ -24,6 +24,19 @@ sudo mysql -uroot -e "GRANT ALL ON hashtopolis.* TO 'hashtopolis'@'localhost';"
 Apparently stuff changed between mysql versions.
 
 
+At this section
+
+Now we need to modify php.ini open php.ini up in nano use CTRL+W to search for the terms below modify the php.ini file when you have finished use CTRL+O in nano to write the changes to the file. To exit you CTRL+X.
+
+```
+nano /etc/php/7.2/apache2/php.ini
+```
+
+the 7.2 directory will be different based on the version of PHP that got installed. Mine was 7.4, so my path looked like this:
+
+```
+nano /etc/php/7.4/apache2/php.ini
+```
 
 ## Sources
 
