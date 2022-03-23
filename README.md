@@ -26,37 +26,37 @@ NVIDIA-SMI and the NVIDIA Cuda Toolkit seem to be required to successfully use H
 
 Start with a full system upgrade and then reboot:
 ```
-$ sudo apt update && sudo apt full-upgrade -y
-$ reboot
+sudo apt update && sudo apt full-upgrade -y
+reboot
 ```
 
 After we updated the system, we need to check the nouveau kernel modules (Open Source Nvidia drivers that will conflict with NVIDIA Official Drivers)
 
 ```
-$ lsmod | grep -i nouveau
+lsmod | grep -i nouveau
 ```
 
 If the previous command outputs something, for example:
 ```
-$ nouveau 1499136 1
-$ mxm_wmi 16384 1 nouveau
-$ wmi 16384 2 mxm_wmi,nouveau
-$ video 40960 1 nouveau
+nouveau 1499136 1
+mxm_wmi 16384 1 nouveau
+wmi 16384 2 mxm_wmi,nouveau
+video 40960 1 nouveau
 ```
 this means that nouveau is in use. Therefore, you must add them to the blacklist:
 
 ```
-$ echo -e "blacklist nouveau\noptions nouveau modeset=0\nalias nouveau off" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
+echo -e "blacklist nouveau\noptions nouveau modeset=0\nalias nouveau off" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
 ```
 
 After changing the kernel parameters, we need to update our initramfs and reboot.
 ```
-$ update-initramfs -u && reboot
+update-initramfs -u && reboot
 ```
 
 After rebooting and verifying that the nouveau modules are not loaded, we proceed to install the OpenCL ICD bootloader, drivers, and the CUDA toolkit.
 ```
-$ sudo apt install -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
+sudo apt install -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
 ```
 During driver installation, the system creates new kernel modules, so another reboot is required.
 
@@ -64,12 +64,12 @@ During driver installation, the system creates new kernel modules, so another re
 
 Now our system should be ready, we need to check that the drivers are loaded correctly. We can quickly verify this by running the nvidia-smi tool.
 ```
-$ nvidia-smi
+nvidia-smi
 ```
 
 The output shows that our driver and GPU are fine – we can proceed to crack passwords. Before continuing, let's check again and make sure hashcat and CUDA work together.
 ```
-$ hashcat -I
+hashcat -I
 ```
 
 # More Reading
