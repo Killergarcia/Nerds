@@ -22,7 +22,7 @@ python3 agent.zip
 ```
 
 ```
-curl http://192.168.8.116/api/server.php
+http://192.168.8.116/api/server.php
 ```
 
 note: At "Create a MySQL database"
