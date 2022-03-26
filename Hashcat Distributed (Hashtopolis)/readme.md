@@ -3,6 +3,28 @@
 Hashtopolis is a way to distribute Hashcat work between computers...apparently. Working on getting it up and running.
 
 
+## Installing Agent
+
+```
+sudo apt install -y python3-pip zip
+```
+
+```
+pip3 install requests psutil
+```
+
+```
+curl http://192.168.8.116/agents.php?download=1 -so agent.zip
+```
+
+```
+python3 agent.zip
+```
+
+```
+curl http://192.168.8.116/api/server.php
+```
+
 note: At "Create a MySQL database"
  
 It has the following commands:
