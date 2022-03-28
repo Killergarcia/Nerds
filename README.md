@@ -47,7 +47,9 @@ NVIDIA-SMI and the NVIDIA Cuda Toolkit seem to be required to successfully use H
 So after much headache, it appears that the newest version of Parrot doesn't support the newest version of NVIDIA Driver. The Driver was compiled with a newer compiler version than Parrot has, or some such thing. The easiest way I got it working was the following: 
 
 Install Parrot 4.10
+
 Install Linux NVIDIA Driver 470.103.01
+
 Install Linux NVIDIA Cuda Toolkit (Comes with newest NVIDIA Driver, do NOT install this)
 
 ## Enabling OpenCL for NVIDIA
