@@ -38,11 +38,11 @@ So far I've ran these benchmarks on the following GPUs
 ### NVIDIA GeForce RTX 3080, 9538/10015 MB, 68MCU
 **912.8 kH/s** - (76.13ms) @ Accel:32 Loops:128 Thr:1024 Vec:1
 
-## Hashcat Driver Stuff
+# Hashcat Driver Stuff
 
 NVIDIA-SMI and the NVIDIA Cuda Toolkit seem to be required to successfully use Hashcat with NVIDIA GPUs. SMI (System Management Interface) is used for monitoring NVIDIA GPUs (I assume for features Hashcat has like watching the GPU Temps in order to shut it off if it gets too hot), while the CUDA Toolkit is what actually enables Hashcat to interface with the GPU to do the cracking.
 
-# How to enable OpenCL on Kali Linux (Debian, Linux Mint, Ubuntu) for hashcat
+## How to enable OpenCL on Kali Linux (Debian, Linux Mint, Ubuntu) for hashcat
 
 So after much headache, it appears that the newest version of Parrot doesn't support the newest version of NVIDIA Driver. The Driver was compiled with a newer compiler version than Parrot has, or some such thing. The easiest way I got it working was the following: 
 
