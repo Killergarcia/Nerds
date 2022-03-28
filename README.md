@@ -48,9 +48,11 @@ So after much headache, it appears that the newest version of Parrot doesn't sup
 
 Install Parrot 4.10
 
-Install Linux NVIDIA Driver 470.103.01
+Boot into headless mode (add the 3 at the end of the linux boot line)
 
-Install Linux NVIDIA Cuda Toolkit (Comes with newest NVIDIA Driver, do NOT install this)
+Install Linux NVIDIA Driver 470.103.01 via CLI ( this is important because if you have the GUI running the Driver has issues installing )
+
+Install Linux NVIDIA Cuda Toolkit ( Comes with newest NVIDIA Driver, do NOT install the driver )
 
 ## Enabling OpenCL for NVIDIA
 
