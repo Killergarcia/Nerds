@@ -25,6 +25,10 @@ python3 agent.zip
 http://192.168.8.116/api/server.php
 ```
 
+## Server Setup
+
+https://hackingvision.com/2020/03/30/distributed-hash-cracking-hashcat-hashtopolis-tutorial/
+
 note: At "Create a MySQL database"
  
 It has the following commands:
