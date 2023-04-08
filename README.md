@@ -12,6 +12,10 @@ This doesn't seem to work on regular Raspbian, only Kali. I assume that the pack
 apt-get install realtek-rtl88xxau-dkms
 ```
 
+Source for this
+
+https://cybersudo.org/install-alfa-ac1200-awus036ach-driver-on-kali-linux/
+
 ### hcxdumptool
 
 ```
