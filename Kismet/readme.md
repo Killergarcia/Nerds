@@ -2,9 +2,10 @@
 
 ## GPS
 
--Requires modification of the Kismet config file
-
---Located at /etc/kismet/kismet.conf
+- Requires modification of the Kismet config file located at:
+```
+/etc/kismet/kismet.conf
+```
 
 ```
 # GPS configuration
