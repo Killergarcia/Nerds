@@ -7,6 +7,8 @@
 /etc/kismet/kismet.conf
 ```
 
+By default, section looks like: 
+
 ```
 # GPS configuration
 # gps=type:options
@@ -26,3 +28,6 @@
 # gps=virtual:lat=123.45,lon=45.678,alt=1234
 # gps=web:name=gpsweb
 ```
+
+## CGPS, GPSD and you
+
