@@ -4,7 +4,7 @@ Small form factor GPS module, works on Pi and Arduino and anything else that can
 
 ## GPIO from GPS to Pi
 
-![BN-220 Pinout](BN-220_pinout.jpg)
+![BN-220 Pinout](BN-220_pinout.jpg)(rpi-gps_pinout.JPG)
 
 ![GPS to Pi - Not BN-220 specific](rpi-gps_pinout.JPG)
 
