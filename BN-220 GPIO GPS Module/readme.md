@@ -18,9 +18,7 @@ GPIO connection diagrams for module and Pi. Note that the picture of the pi conn
 sudo raspi-config
 ```
 
-Select "Interfaces"
-
-Select "Serial"
+Select "Interfaces" -> "Serial"
 
 For "Serial login shell" choose whatever fits your needs
 
@@ -34,6 +32,36 @@ To check GPS activity on serial port - after running this command you should see
 cat /dev/serial0
 ```
 
+
+### Reading the Position Data
+
+# I want to check these to see what's actually necessary
+
+Stop the GPSD service that runs by default so we can change settings
+
+```
+sudo systemctl stop gpsd.socket
+```
+
+Note that you'll have to type this command every time you boot up the system. Alternatively, you can also disable it entirely:
+
+```
+sudo systemctl disable gpsd.socket
+```
+
+Start a new gpsd instance that redirects the data of the correct serial port to a socket: 
+
+# Might be able to manually change gpsd.sock settings to force it to use serial0?
+
+```
+sudo gpsd /dev/serial0 -F /var/run/gpsd.sock
+```
+
+Display the GPS data
+
+```
+sudo cgps -s
+```
 
 
 
