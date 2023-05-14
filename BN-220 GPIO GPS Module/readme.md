@@ -2,11 +2,13 @@
 
 Small form factor GPS module, works on Pi and Arduino and anything else that can handle serial data in I assume
 
-## GPIO
+## GPIO from GPS to Pi
 
-![alt text](BN-220_pinout.jpg)
+![BN-220 Pinout](BN-220_pinout.jpg)
 
-GPIO Picture
+![GPS to Pi - Not BN-220 specific](rpi-gps_pinout.jpg)
+
+GPIO info for module and Pi. Note that the picture of the pi connecting to the GPS module is *not* BN-220 specific
 
 
 ## Source for Steps
