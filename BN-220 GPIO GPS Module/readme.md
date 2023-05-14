@@ -4,7 +4,8 @@ Small form factor GPS module, works on Pi and Arduino and anything else that can
 
 # TODO
 
-- [ ] I want to check these to see what's actually necessary
+- [ ] I want to check the commands in "Reading the position data" to see what's actually necessary
+- [ ] Might be able to manually change gpsd.sock settings to force it to use serial0?
 
 ## GPIO from GPS to Pi
 
@@ -38,8 +39,6 @@ cat /dev/serial0
 
 
 ### Reading the Position Data
-
-# I want to check these to see what's actually necessary
 
 Stop the GPSD service that runs by default so we can change settings
 
