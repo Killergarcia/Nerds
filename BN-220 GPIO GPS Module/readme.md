@@ -55,7 +55,7 @@ sudo systemctl disable gpsd.socket
 Start a new gpsd instance that redirects the data of the correct serial port to a socket: 
 
 ```
-sudo gpsd /dev/serial0 -F /var/run/gpsd.sock
+gpsd /dev/serial0 -F /var/run/gpsd.sock
 ```
 
 Display the GPS data
@@ -64,7 +64,12 @@ Display the GPS data
 sudo cgps -s
 ```
 
+### Automating the startup
 
+I added this tidbit to my /etc/rc.local file. Worked like a charm (In Raspbian)
+```
+/usr/sbin/gpsd /dev/serial0 -F /var/run/gpsd.sock
+```
 
 ## Source for Steps
 
