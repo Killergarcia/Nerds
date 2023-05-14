@@ -54,8 +54,6 @@ sudo systemctl disable gpsd.socket
 
 Start a new gpsd instance that redirects the data of the correct serial port to a socket: 
 
-# Might be able to manually change gpsd.sock settings to force it to use serial0?
-
 ```
 sudo gpsd /dev/serial0 -F /var/run/gpsd.sock
 ```
