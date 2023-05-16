@@ -1,4 +1,4 @@
-# HCX Tools
+# hcxtools
 
 ## hcxdumptool
 
