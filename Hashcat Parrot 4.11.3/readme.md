@@ -1,1 +1,0 @@
-Hashcat on Parrot

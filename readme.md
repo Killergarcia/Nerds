@@ -3,39 +3,6 @@ Welcome!
 
 ## New Stuff
 
-
-### RTL8812AU Driver install for Pi 4
-
-This doesn't seem to work on regular Raspbian, only Kali. I assume that the packages just aren't in Raspbian
-
-```
-apt-get install realtek-rtl88xxau-dkms
-```
-
-Source for this
-
-https://cybersudo.org/install-alfa-ac1200-awus036ach-driver-on-kali-linux/
-
-### hcxdumptool
-
-```
-hcxdumptool -o capture.pcapng -i [interface] --enable_status=1
-```
-
-Hcxdumptool uses PMKID stuff to avoid needing the 4 way handshake for capturing PWs
-
-https://hashcat.net/forum/thread-7717.html
-
-### hcxpcapngtool
-
-```
-hcxpcapngtool -o capture_hash.txt [capture file]
-```
-
-```
-hashcat -m 22000 [captured hash] -a3 ?l?l?l?l?l?l?l?l
-```
-
 ## Hashcat Benchmarks
 
 So far I've ran these benchmarks on the following GPUs

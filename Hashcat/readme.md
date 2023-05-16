@@ -1,7 +1,4 @@
-# Nerds
-Welcome!
-
-## New Stuff
+# Various Hashcat things
 
 ## Hashcat Benchmarks
 
