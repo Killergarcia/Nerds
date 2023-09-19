@@ -1,10 +1,7 @@
 # Basic webcam service for Pi
 
+## Tested on Raspbian Lite
 
-
-## Using on Raspbian
-
-### You have to enable the Serial connection for GPIO on the Pi
 
 ```
 sudo raspi-config
