@@ -30,7 +30,8 @@ Note: Change the following two lines from on to off if you’re having issues wi
 
 picture_output off
 movie_output off
-Optional (Don’t include the text after the #)
+
+Optional (Don’t include the text after the -)
 
 stream_maxrate 100 - This change will allow for real-time streaming but requires more bandwidth & resources. Needs to be added to the config file, default is 1
 framerate 100 - Changing this option will allow for 100 frames to be captured per second allowing for smoother video, default is 50
