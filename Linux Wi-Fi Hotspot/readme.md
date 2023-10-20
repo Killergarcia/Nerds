@@ -37,37 +37,31 @@ wpa_pairwise=CCMP
 rsn_pairwise=CCMP
 ```
 
-### Create dnsmasq config
+### Edit dnsmasq config
 
 ```
-nano dnsmasq.conf
+sudo nano /etc/dnsmasq.conf
 ```
 
 ```
 interface=wlan0
-dhcp-range=192.168.10.3,192.168.10.20,12h
+dhcp-range=192.168.10.3,192.168.10.10,12h
 ```
 
 ##Order of Operations
 
 1. Login
-2. Check dnsmasq status - it usually runs at startup and we don't want that. I assume you can set the default config to be the one we made but I didn't look into that. I'm lazy. Stop the default one. 
+2. Check dnsmasq status - ensure it's got the log saying what IP range it's serving so you know it's bueno 
 
 ```
 sudo systemctl status dnsmasq
-```
-
-If running, stop it:
-
-```
-sudo systemctl stop dnsmasq
 ```
 
 5. Set wlan0 interface IP Address
 
 ```
 sudo ip link set wlan0 down # Shouldn't need this but I do it to be sure
-sudo ip addr add 10.0.0.1/24 dev wlan0
+sudo ip addr add 192.168.10.1/24 dev wlan0
 sudo ip link set wlan0 up
 ```
 
@@ -77,14 +71,13 @@ sudo ip link set wlan0 up
 cd /home/user/wifi-ap
 ```
 
-9. Run commands to start AP and Server
+9. Run commands to start AP
 
 ```
-sudo dnsmasq -C dnsmasq.conf
 sudo hostapd -B hostapd.conf
 ```
 
-At this point I can connect, receive an address within the 192.168.10.3-20 range and can SSH.
+At this point I can connect, receive an address within the 192.168.10.3-10 range and can SSH.
 
 
 I stole this from here:
