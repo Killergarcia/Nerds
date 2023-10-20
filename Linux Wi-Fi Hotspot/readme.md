@@ -92,6 +92,8 @@ I stole this from here:
 https://unix.stackexchange.com/questions/77530/setting-up-an-ad-hoc-network-on-boot
 
 
+<3
+
 # This is using some DUMB SHIT
 ## Like for real this is way harder than above
 ### Find wlan device names
