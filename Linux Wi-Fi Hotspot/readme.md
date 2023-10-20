@@ -86,10 +86,10 @@ sudo hostapd -B hostapd.conf
 
 At this point I can connect, receive an address within the 192.168.10.3-20 range and can SSH.
 
-<3 
 
+I stole this from here:
 
-
+https://unix.stackexchange.com/questions/77530/setting-up-an-ad-hoc-network-on-boot
 
 
 # This is using some DUMB SHIT
