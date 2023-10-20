@@ -59,6 +59,8 @@ sudo systemctl status dnsmasq
 
 5. Set wlan0 interface IP Address
 
+You could probably automate this but I'm lazy
+
 ```
 sudo ip link set wlan0 down # Shouldn't need this but I do it to be sure
 sudo ip addr add 192.168.10.1/24 dev wlan0
