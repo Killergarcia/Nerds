@@ -1,6 +1,6 @@
 ## Linux Wi-Fi AP
 
-##This is using hostapd and dnsmasq on a Pi Zero W
+## This is using hostapd and dnsmasq on a Pi Zero W
 Had to install hostapd and dnsmasq
 
 ```
