@@ -48,7 +48,7 @@ interface=wlan0
 dhcp-range=192.168.10.3,192.168.10.10,12h
 ```
 
-##Order of Operations
+## Order of Operations
 
 1. Login
 2. Check dnsmasq status - ensure it's got the log saying what IP range it's serving so you know it's bueno 
@@ -80,7 +80,7 @@ sudo hostapd -B hostapd.conf
 At this point I can connect, receive an address within the 192.168.10.3-10 range and can SSH.
 
 
-I stole this from here:
+I stole this from here - had to tweak some stuff but the gist is the same:
 
 https://unix.stackexchange.com/questions/77530/setting-up-an-ad-hoc-network-on-boot
 
