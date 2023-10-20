@@ -73,7 +73,7 @@ sudo ip link set wlan0 up
 cd /home/user/wifi-ap
 ```
 
-9. Run commands to start AP
+9. Command to start AP
 
 ```
 sudo hostapd -B hostapd.conf
