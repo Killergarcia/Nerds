@@ -1,0 +1,159 @@
+{
+  "main": {
+    "id": "596baa849b829d03",
+    "type": "split",
+    "children": [
+      {
+        "id": "e48d031e475e9ca9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c39cf4e82466b9b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RCON.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7bd175ad58e4eb80",
+    "type": "split",
+    "children": [
+      {
+        "id": "7509c119708695e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af01c2ae3688d109",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "924ce4ca54b69ccc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7e2fdc2d482d4cb7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0a1d91bc1993be67",
+    "type": "split",
+    "children": [
+      {
+        "id": "06f6999fd3f6dca9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9346f4d6b71f89c7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "RCON.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "790b3ced91210f0b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "RCON.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "425975de594fdcea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b670fe958bd73120",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "RCON.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c39cf4e82466b9b1",
+  "lastOpenFiles": [
+    "3. Server Config.md",
+    "2. CS2 Server Commands.md",
+    "1. Server Specs.md",
+    "Pics/Screenshot 2024-05-05 010411.png",
+    "RCON.md",
+    "Welcome.md",
+    "Pics"
+  ]
+}
